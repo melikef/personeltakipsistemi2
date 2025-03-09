@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace personeltakipsistemi2
 {
@@ -16,6 +18,11 @@ namespace personeltakipsistemi2
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

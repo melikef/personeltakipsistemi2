@@ -1,6 +1,7 @@
 using Microsoft.Data.SqlClient;
 using personeltakipsistemi2;
 using System;
+using System.Drawing;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
@@ -17,7 +18,7 @@ namespace personeltakipsistemi2
             InitializeComponent();
         }
 
-      
+
         private void buttonGiris_Click(object sender, EventArgs e)
         {
             // Kullanýcýnýn girdiði bilgileri al
@@ -26,7 +27,7 @@ namespace personeltakipsistemi2
 
             // SQL baðlantý dizesini tanýmla (kendi veritabaný bilgilerini ekle!)
             string connectionString = "Server=DESKTOP-0HPF63K;Database=personeltakipsistemi;Integrated Security=True;";
-
+            
             // SQL sorgusu: Kullanýcý adý ve þifreyi kontrol et
             string query = "SELECT COUNT(*) FROM girisekran WHERE kullaniciad = @kullaniciad AND sifre = @sifre";
 
@@ -73,6 +74,11 @@ namespace personeltakipsistemi2
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtboxKullaniciAd_TextChanged(object sender, EventArgs e)
         {
 
         }

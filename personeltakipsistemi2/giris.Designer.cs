@@ -62,6 +62,7 @@
             txtboxKullaniciAd.Name = "txtboxKullaniciAd";
             txtboxKullaniciAd.Size = new Size(329, 31);
             txtboxKullaniciAd.TabIndex = 3;
+            txtboxKullaniciAd.TextChanged += txtboxKullaniciAd_TextChanged;
             // 
             // txtboxSifre
             // 
