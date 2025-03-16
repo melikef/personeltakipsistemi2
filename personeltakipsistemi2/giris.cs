@@ -26,8 +26,11 @@ namespace personeltakipsistemi2
             string girilenSifre = txtboxSifre.Text;
 
             // SQL baðlantý dizesini tanýmla (kendi veritabaný bilgilerini ekle!)
-            string connectionString = "Server=DESKTOP-0HPF63K;Database=personeltakipsistemi;Integrated Security=True;";
-            
+            string connectionString = "Server=DESKTOP-0HPF63K;Database=personel;User Id=mel;Password=123456;Encrypt=True;TrustServerCertificate=True;";
+
+
+
+
             // SQL sorgusu: Kullanýcý adý ve þifreyi kontrol et
             string query = "SELECT COUNT(*) FROM girisekran WHERE kullaniciad = @kullaniciad AND sifre = @sifre";
 
@@ -36,7 +39,7 @@ namespace personeltakipsistemi2
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     // Kullanýcý girdilerini parametre olarak ekle (SQL Injection korumasý için)
-                    cmd.Parameters.AddWithValue("@kullaniciad", Class1.HashSifre(girilenKullaniciAdi)); // Kullanýcý adýný da hash'le
+                    cmd.Parameters.AddWithValue("@kullaniciad", girilenKullaniciAdi); // DÜZ HALÝ KALSIN
                     cmd.Parameters.AddWithValue("@sifre", Class1.HashSifre(girilenSifre)); // Hashlenmiþ þifreyi SQL'e gönder
 
 
@@ -82,5 +85,8 @@ namespace personeltakipsistemi2
         {
 
         }
+                        
+    
+    
     }
 }
