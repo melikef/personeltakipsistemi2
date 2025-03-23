@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtboxId = new TextBox();
             button2 = new Button();
             groupBox1 = new GroupBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtboxAd = new TextBox();
+            txtboxSoyad = new TextBox();
+            txtboxDepartman = new TextBox();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -42,32 +41,23 @@
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
             groupBox3 = new GroupBox();
-            buttonListele = new Button();
-            buttonKaydet = new Button();
-            buttonSil = new Button();
-            buttonTemizle = new Button();
             buttonGüncelle = new Button();
+            buttonTemizle = new Button();
+            buttonSil = new Button();
+            buttonKaydet = new Button();
+            buttonListele = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox3.SuspendLayout();
             SuspendLayout();
             // 
-            // textBox1
+            // txtboxId
             // 
-            textBox1.Location = new Point(111, 24);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(265, 31);
-            textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(122, 237);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 5;
-            button1.Text = "Kişi Ekle";
-            button1.UseVisualStyleBackColor = true;
+            txtboxId.Location = new Point(111, 24);
+            txtboxId.Name = "txtboxId";
+            txtboxId.Size = new Size(265, 31);
+            txtboxId.TabIndex = 2;
             // 
             // button2
             // 
@@ -80,15 +70,14 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtboxAd);
+            groupBox1.Controls.Add(txtboxSoyad);
+            groupBox1.Controls.Add(txtboxDepartman);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtboxId);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(376, 301);
@@ -96,26 +85,26 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Personel Ekleme";
             // 
-            // textBox4
+            // txtboxAd
             // 
-            textBox4.Location = new Point(111, 67);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(265, 31);
-            textBox4.TabIndex = 6;
+            txtboxAd.Location = new Point(111, 67);
+            txtboxAd.Name = "txtboxAd";
+            txtboxAd.Size = new Size(265, 31);
+            txtboxAd.TabIndex = 6;
             // 
-            // textBox3
+            // txtboxSoyad
             // 
-            textBox3.Location = new Point(111, 119);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(265, 31);
-            textBox3.TabIndex = 5;
+            txtboxSoyad.Location = new Point(111, 119);
+            txtboxSoyad.Name = "txtboxSoyad";
+            txtboxSoyad.Size = new Size(265, 31);
+            txtboxSoyad.TabIndex = 5;
             // 
-            // textBox2
+            // txtboxDepartman
             // 
-            textBox2.Location = new Point(111, 169);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(265, 31);
-            textBox2.TabIndex = 4;
+            txtboxDepartman.Location = new Point(111, 169);
+            txtboxDepartman.Name = "txtboxDepartman";
+            txtboxDepartman.Size = new Size(265, 31);
+            txtboxDepartman.TabIndex = 4;
             // 
             // label4
             // 
@@ -190,32 +179,14 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Buton";
             // 
-            // buttonListele
+            // buttonGüncelle
             // 
-            buttonListele.Location = new Point(49, 30);
-            buttonListele.Name = "buttonListele";
-            buttonListele.Size = new Size(194, 39);
-            buttonListele.TabIndex = 0;
-            buttonListele.Text = "Listele";
-            buttonListele.UseVisualStyleBackColor = true;
-            // 
-            // buttonKaydet
-            // 
-            buttonKaydet.Location = new Point(49, 85);
-            buttonKaydet.Name = "buttonKaydet";
-            buttonKaydet.Size = new Size(194, 34);
-            buttonKaydet.TabIndex = 1;
-            buttonKaydet.Text = "Kaydet";
-            buttonKaydet.UseVisualStyleBackColor = true;
-            // 
-            // buttonSil
-            // 
-            buttonSil.Location = new Point(49, 135);
-            buttonSil.Name = "buttonSil";
-            buttonSil.Size = new Size(194, 34);
-            buttonSil.TabIndex = 2;
-            buttonSil.Text = "Sil";
-            buttonSil.UseVisualStyleBackColor = true;
+            buttonGüncelle.Location = new Point(49, 242);
+            buttonGüncelle.Name = "buttonGüncelle";
+            buttonGüncelle.Size = new Size(194, 34);
+            buttonGüncelle.TabIndex = 4;
+            buttonGüncelle.Text = "Güncelle";
+            buttonGüncelle.UseVisualStyleBackColor = true;
             // 
             // buttonTemizle
             // 
@@ -226,14 +197,32 @@
             buttonTemizle.Text = "Temizle";
             buttonTemizle.UseVisualStyleBackColor = true;
             // 
-            // buttonGüncelle
+            // buttonSil
             // 
-            buttonGüncelle.Location = new Point(49, 242);
-            buttonGüncelle.Name = "buttonGüncelle";
-            buttonGüncelle.Size = new Size(194, 34);
-            buttonGüncelle.TabIndex = 4;
-            buttonGüncelle.Text = "Güncelle";
-            buttonGüncelle.UseVisualStyleBackColor = true;
+            buttonSil.Location = new Point(49, 135);
+            buttonSil.Name = "buttonSil";
+            buttonSil.Size = new Size(194, 34);
+            buttonSil.TabIndex = 2;
+            buttonSil.Text = "Sil";
+            buttonSil.UseVisualStyleBackColor = true;
+            // 
+            // buttonKaydet
+            // 
+            buttonKaydet.Location = new Point(49, 85);
+            buttonKaydet.Name = "buttonKaydet";
+            buttonKaydet.Size = new Size(194, 34);
+            buttonKaydet.TabIndex = 1;
+            buttonKaydet.Text = "Kaydet";
+            buttonKaydet.UseVisualStyleBackColor = true;
+            // 
+            // buttonListele
+            // 
+            buttonListele.Location = new Point(49, 30);
+            buttonListele.Name = "buttonListele";
+            buttonListele.Size = new Size(194, 39);
+            buttonListele.TabIndex = 0;
+            buttonListele.Text = "Listele";
+            buttonListele.UseVisualStyleBackColor = true;
             // 
             // personel
             // 
@@ -256,17 +245,16 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtboxId;
         private Button button2;
         private GroupBox groupBox1;
         private Label label3;
         private Label label2;
         private Label label1;
         private Label label4;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtboxAd;
+        private TextBox txtboxSoyad;
+        private TextBox txtboxDepartman;
         private GroupBox groupBox2;
         private DataGridView dataGridView1;
         private GroupBox groupBox3;
