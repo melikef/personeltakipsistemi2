@@ -13,7 +13,8 @@ namespace PersonelTakipSistemi
         {
             InitializeComponent();
         }
-
+            
+        
         private void buttonKaydet_Click(object sender, EventArgs e)
         {
             try
