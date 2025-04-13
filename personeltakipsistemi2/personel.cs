@@ -40,7 +40,7 @@ namespace PersonelTakipSistemi
 
         private void buttonListele_Click(object sender, EventArgs e)
         {
-            Listele();
+             Listele();
         }
 
         private void Listele()
