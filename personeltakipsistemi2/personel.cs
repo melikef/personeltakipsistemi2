@@ -50,6 +50,7 @@ namespace PersonelTakipSistemi
             dataGridView1.DataSource = dt;
         }
 
+
         private void buttonSil_Click(object sender, EventArgs e)
         {
             try
